@@ -14,8 +14,10 @@ server.listen(PORT, () => {
 function doGet(placeID) {
   var result = [];
 result.test = "test";
-  return ContentService.createTextOutput(JSON.stringify(result))
-    .setMimeType(ContentService.MimeType.JSON);
+  
+  return result
+  //return ContentService.createTextOutput(JSON.stringify(result))
+   // .setMimeType(ContentService.MimeType.JSON);
 }
 
 
